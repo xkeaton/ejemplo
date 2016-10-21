@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>programando-jugando</title>
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.vertical-tabs.min.css" rel="stylesheet">
+    <link href="css/fakeLoader.css" rel="stylesheet">
+    <link href="css/anno.css" rel="stylesheet">
+    <link href="css/uno.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/default.min.css">
+    <script src="../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+</head>
+<body style="display:none">
+<!-- MODAL'S -->
+
+<!-- INSTRUCTION -->
+
+ <div class="modal" id="ModalInstruction" tabIndex="-1" role="dialog"   data-backdrop="static" aria-labelledby="myModalLabel">
+          <div class="modal-dialog ezCustTrans" role="document">
+
+            <div class="modal-content">
+              <div class="modal-header bg-info">
+                <button type="button" class="close" data-dismiss="modal"  aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+                 <h1 class="modal-title" id="myModalLabel"><i class="glyphicon glyphicon-info-sign "></i> Instrucciones</h1>
+              </div>
+
+              <div class="modal-body">
+
+                <h1>Ayuda a tu personaje a alcanzar la moneda! </h1> 
+                <h1>No te olvides de esto:</h1>
+                <div class="row">
+                  <div class="col-md-4">
+                      <strong><h4>Variables</h4></strong> 
+                      <div class="row">
+                        <div class="col-md-12"><h4>Las caracteristicas que permiten modificar movimientos de tu personaje.</h4></div>
+                      </div>
+                  </div>
+                  <div class="col-md-4"> 
+                      <strong><h4>Acciones</h4></strong>
+
+                      <div class="row">  
+                          <div class="col-md-12"><h4>Lo que puede realizar tu personaje.</h4></div>
+                      </div>
+
+                  </div>
+                    <div class="col-md-4"> 
+                      <strong><h4>Condicionales</h4></strong>
+
+                      <div class="row">  
+                          <div class="col-md-12"><h4>Permite utilizar una condición para poder avanzar.</h4></div>
+                      </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info btn-lg" data-dismiss="modal">Cerrar</button>
+              </div>
+          
+            </div>
+          </div>
+        </div>
+
+<!-- FIN INSTRUCTION -->
+
+<!-- INSPIRATION -->
+  <div class="modal" id="ModalInspiration" tabIndex="-1" role="dialog"  data-backdrop="static"  aria-labelledby="myModalLabel">
+          <div class="modal-dialog ezCustTrans" role="document">
+
+            <div class="modal-content">
+              <div class="modal-header bg-info">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel"><i class="glyphicon glyphicon-hand-up"></i> Inspiración</h4>
+              </div>
+
+              <div class="modal-body">
+              <p>Este proyecto nace inspirado por:</p>
+                <div class="row">
+
+                  <div class="col-md-4">
+                    <a href="https://hourofcode.com/es"><img  class="img-responsive" src="images/logo-hoc.png" /></a>
+                  </div>
+                  <div class="col-md-4">
+
+                    <a href="http://el.media.mit.edu/logo-foundation/"><img  class="img-responsive" src="images/logo-logo.gif" /></a>
+                  </div>
+                  <div class="col-md-4">
+
+                    <a href="https://scratch.mit.edu/"><img  class="img-responsive" src="images/logo-scratch.jpg" /></a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info btn-lg" data-dismiss="modal">Cerrar</button>
+              </div>
+          
+            </div>
+          </div>
+        </div>
+<!-- END INSPIRATION -->
+
+<!-- ABOUT ME -->
+<div class="modal" id="ModalAboutMe" tabIndex="-1" role="dialog"  data-backdrop="static"  aria-labelledby="myModalLabel">
+          <div class="modal-dialog ezCustTrans" role="document">
+
+            <div class="modal-content">
+              <div class="modal-header bg-info">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel"><i class="glyphicon glyphicon-th-large"></i>codigo-block</h4>
+              </div>
+
+              <div class="modal-body">
+                <p>Zero nace como proyecto de tesis para enseñar a programar a niños.</p>
+                <p>Actualmente se encuentra en una fase alfa.
+                </p>
+                <p>
+                Dudas y/o sugerencias: camilochs@gmail.com
+                </p>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info btn-lg" data-dismiss="modal">Cerrar</button>
+              </div>
+          
+            </div>
+          </div>
+        </div>
+<!-- FIN ABOUT ME -->
+
+<!-- YOU LOSE -->
+
+   <div class="modal" id="ModalLose" tabIndex="-1" role="dialog"  data-backdrop="static"  aria-labelledby="myModalLabel">
+                <div class="modal-dialog ezCustTrans" role="document">
+
+                  <div class="modal-content">
+                    <div class="modal-header bg-warning">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel">Ups!</h4>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <h4>No alcanzaste la moneda...</h4>
+                        <p><strong>No te preocupes puedes volver a intentarlo :)</strong></p>
+
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-warning btn-lg" data-dismiss="modal">Cerrar</button>
+                    </div>
+                
+                  </div>
+                </div>
+              </div>
+<!-- FIN - YOU LOSE-->
+
+<!-- YOU WIN -->
+
+ <div class="modal" id="ModalWinLevel1" tabIndex="-1" role="dialog"  data-backdrop="static" aria-labelledby="myModalLabel">
+                <div class="modal-dialog ezCustTrans" role="document">
+
+                  <div class="modal-content">
+                    <div class="modal-header bg-success">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="myModalLabel"><i class="glyphicon glyphicon-star"></i> Excelente!</h4>
+                    </div>
+
+                    <div class="modal-body">
+
+                         <div class="row">
+                            <div class="col-md-12">
+                              <h4>Felicitaciones!, haz conseguido la moneda </h4>
+                            </div> 
+                        </div> 
+                      <div class="row">
+                        <div class="col-md-12">
+                          <p>Mira el código que acabas de crear:</p>
+
+                        </div>
+
+                      </div>
+                       <div class="row">
+                        
+                           <div class="col-md-12">
+                              
+                            <pre><code class="javascript" onchange="HLAgain();" id="codeAreaWin">...</code></pre>
+                           </div> 
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="modal-footer">
+                    
+                      <a href="level3.html" class="btn btn-success btn-lg" role="button">Siguiente Nivel</a>
+                     </div>
+                
+                  </div>
+                </div>
+              </div>
+<!-- FIN - YOU WIN-->
+<!-- FIN MODAL'S -->
+<div class="fakeLoader"></div>
+<footer>
+<nav class="navbar navbar-default"  role="navigation">
+
+  <div class="navbar-header">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">codigo-block - Nivel 2</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Inicio</a></li>
+    </ul>
+     <ul class="nav navbar-nav navbar-left">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Niveles <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+
+          <li><a href="index.html">Nivel 1</a></li>
+          <li><a href="level2.html">Nivel 2</a></li>
+          <li><a href="level3.html">Nivel 3</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Información <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#" data-toggle="modal" data-target="#ModalInspiration">Inspiración</a></li>
+          <li class="divider"></li>
+          <li><a href="#" data-toggle="modal" data-target="#ModalAboutMe">Acerca de</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>
+</footer>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-7">
+
+      <!-- Button trigger modal -->
+        <button type="button" class=" btn btn-info btn-lg " data-toggle="modal" data-target="#ModalInstruction">
+          <i class="glyphicon glyphicon-info-sign "></i>   Instrucciones
+        </button>
+<!--
+        <button type="button" id="trashButton" class="btn btn-danger  btn-lg" onclick="Blockly.mainWorkspace.clear(); $('#codeArea').text('');  ">
+          <i class="glyphicon glyphicon-trash "></i>   Borrar todo
+        </button>-->
+        <!-- Modal -->
+
+    </div>
+    <div class="col-sm-5 ">
+        <div class="row ">
+          <div class="col-sm-12">
+              <button type="button" id="btnInit" class="btn btn-success btn-lg pull-left" 
+                  onClick ="startGame(this, 'level2')" >
+                <i class="glyphicon glyphicon-play"></i> Iniciar
+              </button>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <p>
+      <!--
+        <button onclick="parseCode()">Parse JavaScript</button>
+        <button onclick="stepCode()" id="stepButton" disabled="disabled">Step JavaScript</button>-->
+      </p>
+    </div>
+  </div>  
+  <div class="row">
+      <div class="col-md-7">
+
+        <div class="row">
+            <div class="col-xs-1" >
+              
+              <ul class="nav nav-tabs tabs-left sideways">
+                <li class="active"><a href="#home-r" onclick="onClickViewBlock()" data-toggle="tab">Entorno</a></li>
+                <li><a href="#profile-r" data-toggle="tab" onclick="onClickViewCode()">Ver Código</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-11" style="padding-left:0px">
+              
+                <div class="tab-content">
+                  <div class="tab-pane active" id="home-r">
+                       <div id="blocklyDiv" style="height:500px;min-height: 100%; width: 100%;"></div>
+
+                        <xml id="toolbox" style="display: none">
+                           
+                         
+                            <category name="Acciones">
+                              <block type="right"></block>
+                              <block type="attackToBox"></block>
+                              
+                            </category>
+                             <category name="Condicionales"> 
+                              
+                                <block type="controls_if"></block>
+                              
+                             </category>
+                             <category name="Valores">
+                              <block type="logic_boolean"></block>
+                            </category>
+                                <category name="Variables">
+                                  <block type="existe_caja"></block>
+                                  <block type="existe_caja_value"></block>
+                            </category>
+
+                        </xml>
+                       <xml id="startBlocks"  style="display: none">
+                            
+                            <block type="start" deletable="false" movable="false" x="230" y="20">
+                            </block>
+                         </xml>
+                  </div>
+                  <div class="tab-pane" id="profile-r">
+                    <pre><code class="js" id="codeArea">...</code></pre>
+                      
+                  </div>
+                </div>
+       
+            </div>
+              
+        </div>
+        
+      </div>
+        <div class="col-md-5">
+              <canvas id='game' style="padding-left:0px" width='487.5' height='500'></canvas>
+        </div>
+  </div>
+
+
+</div>
+</body>
+    <script src="scripts/browser.min.js"></script>
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <script src="scripts/anno.js" type="text/javascript"></script>
+    <script src="scripts/fakeLoader.min.js"></script>
+    <script src='scripts/quintus-all.min.js'></script>
+
+    <script src="scripts/zerolanguage.js"></script>
+    <script src="scripts/zero_interactive.js"></script>
+    <script src="scripts/zerogame.js"></script>
+
+    <script src="scripts/blockly_compressed.js"></script>
+    <script src="scripts/blocks_compressed.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/javascript_compressed.js"></script>
+    <script src="scripts/msg/js/es.js"></script>
+
+    <script src="scripts/zeroblocks.js"></script>
+    <script src="scripts/dos.js"></script>
+
+    <script  src="acorn_interpreter.js"></script>
+
+
+<!-- Mirrored from zero.camilochacon.com/level2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Oct 2016 22:46:53 GMT -->
+</html>

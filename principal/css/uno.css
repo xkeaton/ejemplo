@@ -1,0 +1,133 @@
+body {
+      background-color: #D0F4F7;
+      font-family: 'Nunito', sans-serif;
+    }
+    h1 {
+      font-weight: normal;
+      font-size: 140%;
+    }
+    .blocklyTreeLabel:hover {
+      cursor: pointer;
+    }
+    .blocklyTreeRow:hover {
+      cursor: pointer;
+      font-size: 20;
+      background-color: #D0F4F7 !important;
+    }
+    .modal {
+        text-align: center;
+      }
+    .blocklyToolboxDiv[dir="RTL"] .blocklyTreeRow {
+
+      font-size: 30;
+      font-family: 'Nunito', sans-serif;
+    }
+
+      @media screen and (min-width: 768px) { 
+        .modal:before {
+          display: inline-block;
+          vertical-align: middle;
+          content: " ";
+          height: 100%;
+        }
+      }
+
+      .modal-dialog {
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+      }
+      #game
+      {
+          background: #fff;
+          border-radius: 20px;
+          height: 500px;
+          overflow: hidden;
+          width: 487px;
+
+          /* this fixes the overflow:hidden in Chrome/Opera */
+          -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+      }
+
+    canvas {
+      background-color: blue; 
+      width: 100%;
+
+      height: auto;
+    }
+    .navbar {
+    margin-bottom: 10px;
+  }
+    .modal.modal-wide{
+    overflow: hidden;
+  }
+  .modal.modal-wide .modal-dialog {
+    width: 94%;
+  }
+  .modal-wide .modal-body {
+    overflow-y: auto;
+  }
+
+  @-webkit-keyframes ezCustTrans {
+    0% {
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      -webkit-transform:  perspective(90%) rotateY(-65deg) rotateX(-45deg) translateZ(-200px);
+      -moz-transform: perspective(90%) rotateY(-65deg) rotateX(-45deg) translateZ(-200px);
+      -ms-transform: perspective(90%) rotateY(-65deg) rotateX(-45deg) translateZ(-200px);
+      transform: perspective(90%) rotateY(-65deg) rotateX(-45deg) translateZ(-200px);
+      opacity: 0;
+    }
+      68% {
+      -webkit-transform:  rotateY(10deg) rotateX(10deg) translateZ(20px);
+      -moz-transform:  rotateY(10deg) rotateX(10deg) translateZ(20px);
+      -ms-transform:  rotateY(10deg) rotateX(10deg) translateZ(20px);
+      transform:  rotateY(10deg) rotateX(10deg) translateZ(20px);
+      opacity: 0.8;                
+      }
+    100% {
+      -webkit-transform:  rotateY(0deg) rotateX(0deg) translateZ(0px);
+      -moz-transform:  rotateY(0deg) rotateX(0deg) translateZ(0px);
+      -ms-transform:  rotateY(0deg) rotateX(0deg) translateZ(0px);
+      transform:  rotateY(0deg) rotateX(0deg) translateZ(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes ezCustTrans {
+    0% {
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      -webkit-transform: perspective(90%) rotateY(-65deg) rotateX(-45deg) translateZ(-200px);
+      -moz-transform: perspective(90%) rotateY(-65deg) rotateX(-45deg) translateZ(-200px);
+      -ms-transform: perspective(90%) rotateY(-65deg) rotateX(-45deg) translateZ(-200px);
+      transform: perspective(90%) rotateY(-65deg) rotateX(-45deg) translateZ(-200px);
+      opacity: 0;
+    }
+    68% {
+      -webkit-transform:  rotateY(10deg) rotateX(10deg) translateZ(20px);
+      -moz-transform:  rotateY(10deg) rotateX(10deg) translateZ(20px);
+      -ms-transform:  rotateY(10deg) rotateX(10deg) translateZ(20px);
+      transform:  rotateY(10deg) rotateX(10deg) translateZ(20px);
+      opacity: 0.8;                
+      }
+      100% {
+      -webkit-transform: rotateY(0deg) rotateX(0deg) translateZ(0px);
+      -moz-transform:  rotateY(0deg) rotateX(0deg) translateZ(0px);
+      -ms-transform:  rotateY(0deg) rotateX(0deg) translateZ(0px);
+      transform:  rotateY(0deg) rotateX(0deg) translateZ(0px);
+      opacity: 1;
+    }
+  }
+  .ezCustTrans {
+      -webkit-animation-duration: 0.75s;
+      animation-duration: 0.75s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    -webkit-animation-name: ezCustTrans;
+    animation-name: ezCustTrans;
+  }          
+
+
+  
